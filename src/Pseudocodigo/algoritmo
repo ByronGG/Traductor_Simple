@@ -1,0 +1,31 @@
+/*
+Algortimo para traducir una notacion infija a postfija
+*/
+
+void expr(){
+    term();
+    rest();
+}
+
+void rest(){
+    if(lookahead == '+'){
+        match('+')
+        term();
+        print('-')
+        rest();
+    }
+    else if(lookahead == '-'){
+        match('-')
+        term();
+        print('-')
+        rest();
+    } else{} //No hacer nada con el input
+}
+
+void term(){
+    if(lookahead is a digit){
+        t = lookahead;
+        match(lookahead);
+        print(t);
+    } else report("syntax error")
+}
