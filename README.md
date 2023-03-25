@@ -27,4 +27,5 @@ El método match() comprueba si el siguiente carácter es igual al carácter esp
 ##### Ejemplo de ejecución
 
 > Notacion infija_ 5*2+6/9
+
 > Notacion Postfija: 52*69/+
